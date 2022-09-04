@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DOM</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+  <div class="header">
+    <h1>Recetario de cocina</h1>
+    <p class="azul">Registra los ingredientes</p>
+  </div>
+
+  <div class="content">
+    <div>
+      <h2>Registrar</h2>
+      <div class=" content-info">
+        <form>
+          <div class="field">
+            <label>Nombre:</label>
+            <input id="name" type="text" size=35>
+          </div>
+          <div class="field">
+            <label>Cantidad:</label>
+            <input id="amount" type="number">
+          </div>
+          <div class="field">
+            <label>Unidad:</label>
+            <input id="unit" type="text" size=35>
+          </div>
+          <div class="field">
+            <label>Costo:</label>
+            <input id="cost" type="number">
+          </div>
+          <div class="field">
+            <input id="btnAdd" type="button" value="Agregar">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <h2>Ingredientes</h2>
+      <div class="content-info">
+        <table id="table">
+          <tr>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Costo</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Total</td>
+            <td id="total">0</td>
+
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
